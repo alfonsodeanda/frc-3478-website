@@ -1,15 +1,16 @@
 import robotImage from "../assets/robot-image.png";
 
-export default function Hero() {
+export default function About() {
     return (
-        <section className="w-full h-[400px] flex items-center justify-center">
+        <section className="w-full min-h-[400px] py-12 flex items-center justify-center">
             
             {/* about section */}
             <div className="max-w-[1000px] w-full px-6 flex items-center justify-center gap-[150px]">
 
                 {/* about image */}
-                <img src={robotImage} alt="Our 2026 Season Robot" className="w-full h-auto object-cover" />
-
+                <div className="flex-1 min-w-0">
+                    <img src={robotImage} alt="Our 2026 Season Robot" className="w-full h-auto object-contain" />
+                </div>
                 {/* about text */}
                 <div className="flex-1 flex flex-col justify-center gap-[25px]">
                     <h2 className="font-bebas text-[40px] leading-[1.2] text-[#172B6A] uppercase">
