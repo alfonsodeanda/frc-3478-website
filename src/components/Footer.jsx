@@ -1,24 +1,63 @@
 export default function Footer() {
     return (
-        <footer className="w-full h-[80px] flex justify-center items-center mt-auto">
+        <footer className="w-full h-[80px] py-6 flex justify-center items-center mt-auto">
             
             {/* container */}
-            <div className="max-w-[1000px] w-full px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="max-w-[1000px] w-full px-6 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p className="font-montserrat text-[12px] leading-[1.5] text-[#010512]/70">
                     © {new Date().getFullYear()} LamBot 3478
                 </p>
 
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4">
+                    {/* Facebook */}
+                    <a 
+                        href="https://www.facebook.com/TeamLamBot3478/" 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="opacity-80 hover:opacity-100 transition-opacity"
+                        aria-label="Facebook"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24">
+                            <path fill="#172b6a" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"></path>
+                        </svg>
+                    </a>
+                    
                     {/* Instagram */}
                     <a 
                         href="https://instagram.com/lambot3478" 
                         target="_blank" 
                         rel="noreferrer"
-                        className="hover:opacity-80 transition-opacity"
+                        className="opacity-80 hover:opacity-100 transition-opacity"
                         aria-label="Instagram"
                     >
-                        <svg className="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24">
+                            <path fill="#172b6a" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"></path>
+                        </svg>
+                    </a>
+
+                    {/* YouTube */}
+                    <a 
+                        href="https://www.youtube.com/@TeamLamBot3478" 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="opacity-80 hover:opacity-100 transition-opacity"
+                        aria-label="YouTube"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24">
+                            <path fill="#172b6a" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"></path>
+                        </svg>
+                    </a>
+
+                    {/* The Blue Alliance */}
+                    <a 
+                        href="https://www.thebluealliance.com/team/3478" 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="opacity-80 hover:opacity-100 transition-opacity"
+                        aria-label="The Blue Alliance"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#172b6a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" d="M15.055 14.66v19.895m17.89-19.895v19.895m-17.89 0A8.945 8.945 0 0 0 24 43.5h0m8.945-8.945A8.945 8.945 0 0 1 24 43.5m0-28.824V43.5m-8.945-10.018h17.89m-17.89-10.019h17.89M12.55 4.5h22.9c.793 0 1.43.638 1.43 1.431v7.156c0 .793-.638 1.431-1.43 1.431h-22.9a1.43 1.43 0 0 1-1.43-1.43V5.93c0-.793.638-1.431 1.43-1.431"></path>
                         </svg>
                     </a>
                 </div>
